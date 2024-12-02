@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:views="clr-namespace:AppApuntes1.Views"
+       x:Class="AppApuntes1.AppShell">
+
+    <TabBar>
+        <Tab Title="Notas">
+            <ShellContent ContentTemplate="{DataTemplate views:NotesPage}" />
+        </Tab>
+        <Tab Title="Acerca de">
+            <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" />
+        </Tab>
+    </TabBar>
+
+    <FlyoutItem Title="Menú">
+        <ShellContent ContentTemplate="{DataTemplate views:NotesPage}" />
+    </FlyoutItem>
+
+</Shell>
